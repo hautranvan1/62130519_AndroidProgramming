@@ -16,6 +16,8 @@ public class MangHinhTinhToan extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtWeight;
 	private JTextField txtHeight;
+	private JTextField txtNumberBMI;
+	private JTextField txtKQ;
 
 	public MangHinhTinhToan() {
 		setTitle("Chương trình tính toán BMI");
@@ -56,7 +58,24 @@ public class MangHinhTinhToan extends JFrame {
 		
 		JButton btnBMI = new JButton("TÍNH BMI");
 		btnBMI.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		btnBMI.setBounds(142, 163, 96, 35);
+		btnBMI.setBounds(142, 140, 96, 35);
 		contentPane.add(btnBMI);
+		
+		JLabel lblKtQu = new JLabel("Kết Quả BMI:");
+		lblKtQu.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblKtQu.setBounds(23, 193, 86, 35);
+		contentPane.add(lblKtQu);
+		
+		txtNumberBMI = new JTextField();
+		txtNumberBMI.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		txtNumberBMI.setBounds(119, 198, 96, 27);
+		contentPane.add(txtNumberBMI);
+		txtNumberBMI.setColumns(10);
+		
+		txtKQ = new JTextField();
+		txtKQ.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		txtKQ.setColumns(10);
+		txtKQ.setBounds(225, 198, 142, 27);
+		contentPane.add(txtKQ);
 	}
 }
