@@ -61,9 +61,16 @@ public class MangHinhTinhToan extends JFrame {
 		JButton btnBMI = new JButton("TÍNH BMI");
 		btnBMI.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String str_a = txtWeight.getText();
+				String str_b = txtHeight.getText();
+				Double a = Double.parseDouble(str_a);
+				Double b = Double.parseDouble(str_b);
+				
+				
 				
 			}
 		});
+		
 		btnBMI.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnBMI.setBounds(142, 140, 96, 35);
 		contentPane.add(btnBMI);
