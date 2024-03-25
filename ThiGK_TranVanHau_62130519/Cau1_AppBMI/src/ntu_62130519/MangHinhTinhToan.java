@@ -65,7 +65,8 @@ public class MangHinhTinhToan extends JFrame {
 				String str_b = txtHeight.getText();
 				Double a = Double.parseDouble(str_a);
 				Double b = Double.parseDouble(str_b);
-				Double KQ = a /b *b;
+				Double h = b/100;
+				Double KQ = a /h *h;
 				txtNumberBMI.setText(String.valueOf(KQ));
 				if(KQ < 18.5) {
 					 txtKQ.setText(String.valueOf(" Cân nặng thấp Gầy"));
@@ -102,12 +103,14 @@ public class MangHinhTinhToan extends JFrame {
 		contentPane.add(lblKtQu);
 		
 		txtNumberBMI = new JTextField();
+		txtNumberBMI.setEditable(false);
 		txtNumberBMI.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		txtNumberBMI.setBounds(119, 198, 96, 27);
 		contentPane.add(txtNumberBMI);
 		txtNumberBMI.setColumns(10);
 		
 		txtKQ = new JTextField();
+		txtKQ.setEditable(false);
 		txtKQ.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		txtKQ.setColumns(10);
 		txtKQ.setBounds(225, 198, 142, 27);
