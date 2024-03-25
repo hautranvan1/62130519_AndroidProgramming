@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class MangHinhTinhToan extends JFrame {
 
@@ -57,6 +59,11 @@ public class MangHinhTinhToan extends JFrame {
 		contentPane.add(txtHeight);
 		
 		JButton btnBMI = new JButton("TÍNH BMI");
+		btnBMI.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		btnBMI.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnBMI.setBounds(142, 140, 96, 35);
 		contentPane.add(btnBMI);
