@@ -65,6 +65,8 @@ public class MangHinhTinhToan extends JFrame {
 				String str_b = txtHeight.getText();
 				Double a = Double.parseDouble(str_a);
 				Double b = Double.parseDouble(str_b);
+				Double KQ = a /b *b;
+				txtNumberBMI.setText(String.valueOf(KQ));
 				
 				
 				
