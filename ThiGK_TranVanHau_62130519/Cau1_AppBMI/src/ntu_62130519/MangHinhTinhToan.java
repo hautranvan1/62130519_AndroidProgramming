@@ -66,18 +66,20 @@ public class MangHinhTinhToan extends JFrame {
 				Double a = Double.parseDouble(str_a);
 				Double b = Double.parseDouble(str_b);
 				Double h = b/100;
-				Double KQ = a /h *h;
-				txtNumberBMI.setText(String.valueOf(KQ));
+				Double KQ = a / (h *h);
+				String BMI = String.format("%.2f", KQ);
+				txtNumberBMI.setText(BMI);
+				
 				if(KQ < 18.5) {
 					 txtKQ.setText(String.valueOf(" Cân nặng thấp Gầy"));
 				}
-				if(KQ >=18.5 & KQ <25) {
+				else if(KQ <25) {
 					txtKQ.setText(String.valueOf(" Bình thường "));
 				}
-				if(KQ == 25) {
+				else if(KQ == 25) {
 					txtKQ.setText(String.valueOf(" Thừa cân "));
 				}
-				if(KQ >25 & KQ <30) {
+				else if(KQ >25 & KQ <30) {
 					txtKQ.setText(String.valueOf(" Tiền Béo Phì "));
 				}
 				else {
@@ -87,10 +89,7 @@ public class MangHinhTinhToan extends JFrame {
 				
 			}
 
-			private void setText(String valueOf) {
-				// TODO Auto-generated method stub
-				
-			}
+			
 		});
 		
 		btnBMI.setFont(new Font("Tahoma", Font.PLAIN, 12));
