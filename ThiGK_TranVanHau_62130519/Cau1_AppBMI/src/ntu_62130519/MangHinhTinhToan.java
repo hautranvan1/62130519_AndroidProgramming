@@ -67,8 +67,27 @@ public class MangHinhTinhToan extends JFrame {
 				Double b = Double.parseDouble(str_b);
 				Double KQ = a /b *b;
 				txtNumberBMI.setText(String.valueOf(KQ));
+				if(KQ < 18.5) {
+					 txtKQ.setText(String.valueOf(" Cân nặng thấp Gầy"));
+				}
+				if(KQ >=18.5 & KQ <25) {
+					txtKQ.setText(String.valueOf(" Bình thường "));
+				}
+				if(KQ == 25) {
+					txtKQ.setText(String.valueOf(" Thừa cân "));
+				}
+				if(KQ >25 & KQ <30) {
+					txtKQ.setText(String.valueOf(" Tiền Béo Phì "));
+				}
+				else {
+					txtKQ.setText(String.valueOf(" Béo Phì "));
+				}
 				
 				
+			}
+
+			private void setText(String valueOf) {
+				// TODO Auto-generated method stub
 				
 			}
 		});
