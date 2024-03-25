@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
     <TextView
         android:id="@+id/textView2"
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Nhập cân nặng:"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="104dp" />
+        tools:layout_editor_absoluteY="211dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -21,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="Nhập cân nặng:"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="198dp" />
+        tools:layout_editor_absoluteY="284dp" />
 
     <EditText
         android:id="@+id/editWeight"
@@ -30,7 +31,7 @@
         android:ems="10"
         android:inputType="number"
         tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="88dp" />
+        tools:layout_editor_absoluteY="194dp" />
 
     <EditText
         android:id="@+id/editHeight"
@@ -39,6 +40,50 @@
         android:ems="10"
         android:inputType="number"
         tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="180dp" />
+        tools:layout_editor_absoluteY="268dp" />
+
+    <Button
+        android:id="@+id/btnCaculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tính BMI"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="348dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả:"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <EditText
+        android:id="@+id/editBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <EditText
+        android:id="@+id/editKQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="196dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="115dp"
+        android:text="NHẬP THÔNG TIN ĐỂ TÍN BMI"
+        app:layout_constraintBottom_toTopOf="@+id/editWeight"
+        tools:layout_editor_absoluteX="100dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
