@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
        EditText editTextSoKQ = findViewById(R.id.editKQ);
        String strA = editTextSoA.getText().toString();
 
-       String strB = editTextSoA.getText().toString();
+       String strB = editTextSoB.getText().toString();
        int So_A= Integer.parseInt(strA);
         int So_B= Integer.parseInt(strB);
-        int tong = So_A +So_B;
+        int tong = So_A + So_B;
         String strTong = String.valueOf(tong);
         editTextSoKQ.setText(strTong);
 
