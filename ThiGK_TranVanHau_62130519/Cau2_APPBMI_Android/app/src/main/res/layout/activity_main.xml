@@ -35,11 +35,12 @@
         android:layout_marginStart="143dp"
         android:layout_marginTop="54dp"
         android:layout_marginEnd="143dp"
+        android:onClick="TinhBMI"
         android:text="Tính BMI"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber5" />
+        app:layout_constraintTop_toBottomOf="@+id/editHeight" />
 
     <TextView
         android:id="@+id/textView3"
@@ -62,7 +63,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber4"
+        android:id="@+id/editWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="91dp"
@@ -72,17 +73,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextNumber5"
+        android:id="@+id/editHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber4" />
+        app:layout_constraintTop_toBottomOf="@+id/editWeight" />
 
     <EditText
-        android:id="@+id/editTextNumber6"
+        android:id="@+id/editBMI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -92,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnCaculator" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editKetQua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
@@ -100,6 +101,6 @@
         android:ems="10"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber6" />
+        app:layout_constraintTop_toBottomOf="@+id/editBMI" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
